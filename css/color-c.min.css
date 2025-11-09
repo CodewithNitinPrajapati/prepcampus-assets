@@ -1,0 +1,35 @@
+/* General Styling */
+#color-changer-body{font-family:var(--font);
+font-family: Arial, sans-serif;
+padding: 90px 0 0 0;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Color Palette */
+.color-changer-palette {
+display: flex;
+gap: 15px;
+justify-content: center;
+align-items: center;
+
+}
+
+/* Color Circles */
+.color-circle {
+width: 22px;
+height: 22px;
+border-radius: 50%;
+cursor: pointer;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.color-circle:hover {
+transform: scale(1.1);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .color-circle {
+border: 2px solid #666;
+}
+
+ 

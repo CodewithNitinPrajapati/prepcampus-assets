@@ -1,0 +1,75 @@
+
+/* Second Navigation Bar */
+.nav-second {
+background: #34495e;
+position: fixed;
+width: 100%;
+top:84.2px;  /* Adjusted top position */
+z-index: 999;
+padding: 10px 20px;
+overflow-x: auto;  /* Enable horizontal scroll */
+white-space: nowrap;  /* Prevent line breaks and keep the items in a single line */
+}
+
+.nav-second ul {
+display: flex;
+justify-content: center;  /* Items aligned from left */
+list-style: none;
+padding-left: 0;
+}
+
+.nav-second li {
+margin-right: 30px;
+}
+
+.nav-second li a {
+text-decoration: none;
+color: white;
+font-size: 16px;
+font-weight: 550;
+transition: 0.3s;
+}
+
+.nav-second li a:hover {
+color: #f39c12;
+}
+
+/* Hamburger Icon for Mobile */
+.hamburger-icon {
+display: none;
+font-size: 30px;
+color: white;
+cursor: pointer;
+position: absolute;
+left: 20px;  /* Shift hamburger icon to the left */
+top: 0px;   /* Adjusted top position to be within navbar */
+z-index: 1001;  /* Make sure the icon stays above other content */
+}
+
+/* Show hamburger icon only on mobile */
+@media screen and (max-width: 768px) {
+.hamburger-icon {
+display: block; /* Show hamburger icon on mobile */
+}
+
+.nav-second ul {
+display: flex; /* Keep the menu visible on mobile */
+justify-content: flex-start; /* Keep items aligned from left */
+margin-left: 20px !important; 
+}
+
+.nav-second li {
+margin-right: 20px;
+}
+
+.nav-second li:first-child {
+margin-left: 10px; /* Add spacing after hamburger icon */
+}
+}
+
+@media screen and (max-width: 1012px) {
+.nav-second ul {
+justify-content: flex-start; /* Keep items aligned from left */
+}
+
+}
